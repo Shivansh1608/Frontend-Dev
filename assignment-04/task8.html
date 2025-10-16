@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f4f8; padding: 20px; }
+    form { max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 6px #ccc; }
+    label { display: block; margin: 10px 0 5px; }
+    textarea { width: 100%; padding: 8px; resize: vertical; }
+    .rating { margin-bottom: 10px; }
+    button { padding: 10px 15px; background: #4a90e2; color: white; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Feedback Form</h2>
+  <form method="post" action="#">
+    <label for="feedback">Your Feedback</label>
+    <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+    <div class="rating">
+      <label>Rating:</label>
+      <input type="radio" id="good" name="rating" value="Good" required> <label for="good">Good</label>
+      <input type="radio" id="average" name="rating" value="Average"> <label for="average">Average</label>
+      <input type="radio" id="poor" name="rating" value="Poor"> <label for="poor">Poor</label>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    form { max-width: 400px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 6px #ccc; }
+    label { display: block; margin-top: 10px; }
+    input { width: 100%; padding: 8px; margin-bottom: 10px; }
+    button { padding: 10px 15px; background: #4a90e2; color: white; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Payment</h2>
+  <form>
+    <label for="cardname">Cardholder Name</label>
+    <input type="text" id="cardname" name="cardname" required>
+
+    <label for="cardnumber">Card Number</label>
+    <input type="text" id="cardnumber" name="cardnumber" required>
+
+    <label for="expiry">Expiry Date</label>
+    <input type="month" id="expiry" name="expiry" required>
+
+    <label for="cvv">CVV</label>
+    <input type="password" id="cvv" name="cvv" maxlength="3" required>
+
+    <button type="submit">Pay Now</button>
+  </form>
+</body>
+</html>

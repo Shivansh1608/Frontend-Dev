@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; padding: 20px; }
+    form { max-width: 400px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 5px #aaa; }
+    input { width: 100%; padding: 8px; margin-bottom: 10px; }
+    button { padding: 10px 15px; background: #4a90e2; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    p { font-size: 0.9em; color: #555; }
+  </style>
+</head>
+<body>
+  <h2>Upload Your Image</h2>
+  <form method="post" action="#" enctype="multipart/form-data">
+    <input type="file" name="image" accept=".jpg, .png" required>
+    <p>Allowed file types: .jpg and .png only.</p>
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>

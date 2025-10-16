@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #eef2f7; }
+    form { max-width: 350px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 5px #aaa; }
+    label { display: block; margin-top: 10px; }
+    input { width: 100%; padding: 8px; margin-bottom: 10px; }
+    button { padding: 10px 15px; background: #4a90e2; color: white; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Login</h2>
+  <form method="post" action="#">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <!-- Hidden CSRF token to prevent Cross-Site Request Forgery attacks -->
+    <input type="hidden" name="csrf_token" value="123ABCxyz">
+
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>
