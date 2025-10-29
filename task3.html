@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f2f6fa;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 2rem 0 1rem;
+      font-size: 2rem;
+      color: #002b5b;
+    }
+
+    /* Container for team cards */
+    .team-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      width: 90%;
+      max-width: 1200px;
+      margin-bottom: 3rem;
+    }
+
+    /* Team Member Card */
+    .team-card {
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+      flex: 1 1 300px; /* responsive width */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      border: 3px solid #00bcd4;
+    }
+
+    .team-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.3rem;
+      color: #002b5b;
+    }
+
+    .team-card h4 {
+      font-size: 1.1rem;
+      color: #00bcd4;
+      margin-bottom: 0.8rem;
+    }
+
+    .team-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    /* Highlighted Team Lead Card */
+    .team-lead {
+      background-color: #e8f4fd;
+      border: 2px solid #00bcd4;
+      box-shadow: 0 6px 15px rgba(0, 188, 212, 0.3);
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 600px) {
+      .team-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .team-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Meet Our Team</h1>
+
+  <div class="team-container">
+    <!-- Team Member 1 -->
+    <div class="team-card">
+      <img src="https://via.placeholder.com/150" alt="Team Member 1" />
+      <h3>Aarav Sharma</h3>
+      <h4>UI/UX Designer</h4>
+      <p>
+        Aarav specializes in creating intuitive and visually appealing user interfaces
+        that enhance user experience and drive engagement.
+      </p>
+    </div>
+
+    <!-- Team Lead -->
+    <div class="team-card team-lead">
+      <img src="https://via.placeholder.com/150" alt="Team Lead" />
+      <h3>Shivansh Gupta</h3>
+      <h4>Team Lead</h4>
+      <p>
+        Shivansh oversees project development, ensuring every feature meets the highest
+        standards of functionality and design. He leads with vision and precision.
+      </p>
+    </div>
+
+    <!-- Team Member 3 -->
+    <div class="team-card">
+      <img src="https://via.placeholder.com/150" alt="Team Member 3" />
+      <h3>Priya Mehta</h3>
+      <h4>Frontend Developer</h4>
+      <p>
+        Priya crafts responsive and modern web interfaces using HTML, CSS, and JavaScript.
+        Her code brings ideas to life beautifully.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

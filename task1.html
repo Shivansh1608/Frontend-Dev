@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivansh Gupta | Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #dfe9f3);
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #002b5b;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2em;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+
+    /* Main Section */
+    main {
+      flex: 1;
+      margin-top: 100px;
+      padding: 5vh 10%;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #00bcd4;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    .bio {
+      max-width: 500px;
+    }
+
+    .bio h2 {
+      font-size: 2rem;
+      color: #002b5b;
+      margin-bottom: 1rem;
+    }
+
+    .bio p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    /* Footer */
+    footer {
+      background: #002b5b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 1em;
+      }
+
+      nav ul {
+        gap: 1em;
+      }
+
+      .bio h2 {
+        font-size: 1.5rem;
+      }
+
+      .bio p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shivansh Gupta</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-img" />
+      <div class="bio">
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+          Hello! I'm <strong>Shivansh Gupta</strong>, a creative web developer passionate about crafting engaging
+          digital experiences. I enjoy building interactive websites and exploring the latest trends in design and technology.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Shivansh Gupta | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

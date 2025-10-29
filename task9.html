@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Column Layout</title>
+  <style>
+    body {
+      background-color: #faf5e4;
+      font-family: "Georgia", serif;
+      padding: 40px 80px;
+      color: #222;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      column-span: all;
+      text-align: center;
+      font-size: 1.4rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .content {
+      column-count: 3;
+      column-gap: 40px;
+      text-align: justify;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .content img {
+      float: left;
+      margin: 5px 15px 10px 0;
+      border-radius: 8px;
+      width: 160px;
+      height: auto;
+    }
+
+    @media (max-width: 900px) {
+      .content { column-count: 2; }
+    }
+
+    @media (max-width: 600px) {
+      .content { column-count: 1; }
+      body { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>The Modern Times</h1>
+  <h2>Exploring Innovation and Change</h2>
+
+  <div class="content">
+    <img src="https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=400&q=60" alt="Tech Image">
+    <p>In an age of rapid transformation, innovation defines progress. Across industries, technology reshapes our lives daily, introducing new opportunities and challenges. From artificial intelligence to green energy, we are witnessing the dawn of a new era that blends creativity with science.</p>
+    <p>The news industry, too, has evolved dramatically. Print publications coexist with digital platforms, and readers access content from virtually anywhere. Information flows faster than ever before, giving rise to both awareness and misinformation.</p>
+    <p>As cities grow smarter, our lifestyles adapt to technology-driven ecosystems. Smart homes, electric transport, and automation simplify daily tasks, making life more efficient. Yet, the human connection remains vital in sustaining meaningful progress.</p>
+    <p>Innovation is not just about machines; it's about reimagining possibilities. Each discovery opens a door to better living, sustainability, and collaboration. The future belongs to those who dare to innovate with empathy and purpose.</p>
+  </div>
+</body>
+</html>

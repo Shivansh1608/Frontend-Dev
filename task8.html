@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Layout</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #f4f7fb;
+    }
+
+    /* ===== Header ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #0a9396;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 1.4rem;
+      z-index: 1000;
+    }
+
+    /* ===== Sidebar ===== */
+    .sidebar {
+      background-color: #005f73;
+      color: white;
+      width: 220px;
+      padding-top: 80px;
+      flex-shrink: 0;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 15px 25px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #0a9396;
+    }
+
+    /* ===== Main Content ===== */
+    main {
+      margin-left: 220px;
+      padding: 100px 30px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .content-box {
+      background-color: white;
+      flex: 1 1 45%;
+      min-width: 280px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      body { flex-direction: column; }
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+      }
+      main {
+        margin: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>My Dashboard</header>
+
+  <div class="sidebar">
+    <a href="#">Overview</a>
+    <a href="#">Reports</a>
+    <a href="#">Analytics</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <main>
+    <div class="content-box">
+      <h2>Statistics</h2>
+      <p>Overview of your performance and key analytics.</p>
+    </div>
+    <div class="content-box">
+      <h2>Recent Activity</h2>
+      <p>Track the most recent updates and notifications here.</p>
+    </div>
+  </main>
+</body>
+</html>
