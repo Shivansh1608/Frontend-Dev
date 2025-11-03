@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Homepage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #004aad;
+      padding: 15px 0;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    header a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      padding: 40px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 250px;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .box:hover {
+      transform: rotate(2deg);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .box h2 {
+      color: #004aad;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      color: #555;
+      font-size: 0.95rem;
+      width: 80%;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #004aad;
+      color: white;
+      padding: 10px 0;
+      font-size: 0.9rem;
+      width: 100%;
+    }
+
+    @media (max-width: 800px) {
+      main {
+        flex-direction: column;
+      }
+      .box {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </header>
+
+  <main>
+    <div class="box">
+      <h2>Services</h2>
+      <p>We offer modern web design and development solutions tailored for you.</p>
+    </div>
+    <div class="box">
+      <h2>Projects</h2>
+      <p>Explore our innovative portfolio showcasing creative digital projects.</p>
+    </div>
+    <div class="box">
+      <h2>Contact</h2>
+      <p>Get in touch to collaborate or start your next web project today.</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Shivansh Gupta. All rights reserved.
+  </footer>
+</body>
+</html>

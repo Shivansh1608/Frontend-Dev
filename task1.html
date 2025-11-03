@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background-color: #f8f9fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #004aad;
+      color: white;
+      padding: 15px 40px;
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      padding: 40px;
+      gap: 50px;
+    }
+
+    .about {
+      flex: 1;
+      text-align: left;
+    }
+
+    .about h2 {
+      color: #004aad;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .image img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #004aad;
+      color: white;
+      padding: 10px 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      main {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about, .image {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">Shivansh Gupta</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Shivansh, a passionate web developer and designer.  
+        I love creating beautiful, responsive, and user-friendly websites.  
+        My goal is to blend creativity and technology to craft interactive digital experiences.
+      </p>
+    </section>
+
+    <section class="image">
+      <img src="https://via.placeholder.com/350x300" alt="Profile Image">
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Shivansh Gupta. All rights reserved.</p>
+  </footer>
+</body>
+</html>

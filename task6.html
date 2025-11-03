@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Blog Layout</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+header {
+  grid-area: header;
+  background: #004c99;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 { margin: 0; }
+header nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav a:hover { text-decoration: underline; }
+.sidebar {
+  grid-area: sidebar;
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+}
+.sidebar h3 { margin-top: 0; }
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.article {
+  background: #e6f0ff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.article h2 { margin-top: 0; }
+footer {
+  grid-area: footer;
+  text-align: center;
+  background: #004c99;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+@media (max-width: 800px) {
+  body {
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+  main { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Posts</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="sidebar">
+    <h3>Categories</h3>
+    <ul>
+      <li>Technology</li>
+      <li>Lifestyle</li>
+      <li>Travel</li>
+      <li>Health</li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="article">
+      <h2>Blog Post 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="article">
+      <h2>Blog Post 2</h2>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact: info@myblog.com</p>
+  </footer>
+</body>
+</html>

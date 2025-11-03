@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Layout - Flexbox & Grid</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+header h1 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.article {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.sidebar {
+  background: #e6f0ff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .article {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="article">
+      <div class="box">Service 1</div>
+      <div class="box">Service 2</div>
+      <div class="box">Service 3</div>
+    </div>
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <p>Extra info, updates, or links can go here.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 My Website | All
