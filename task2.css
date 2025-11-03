@@ -1,0 +1,65 @@
+/* Page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Flex container to center boxes both vertically and horizontally */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* centers vertically */
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Common box styling */
+.box {
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Box 1 - px units + min-height */
+.box1 {
+  background-color: #1b4332;
+  width: 200px;
+  min-height: 150px; /* ensures at least 150px height */
+}
+
+/* Box 2 - % units + max-width */
+.box2 {
+  background-color: #2d6a4f;
+  width: 30%;
+  height: 180px;
+  max-width: 300px; /* won’t grow beyond this */
+}
+
+/* Box 3 - vh, em + overflow */
+.box3 {
+  background-color: #52b788;
+  width: 25vw;      /* 25% of viewport width */
+  height: 15em;     /* height depends on font size */
+  overflow: auto;   /* scrolls if content overflows */
+}
+
+/* Make text readable when overflow scrolls */
+.box3 p {
+  font-size: 0.9em;
+  line-height: 1.3em;
+  margin: 0;
+}

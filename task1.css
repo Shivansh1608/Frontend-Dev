@@ -1,0 +1,79 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Flex container for horizontal alignment */
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* wraps boxes on smaller screens */
+  gap: 25px;
+}
+
+/* Common box styles */
+.box {
+  width: 180px;
+  height: 120px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Border style variations */
+.solid {
+  border: 5px solid #2d6a4f;
+}
+
+.dashed {
+  border: 5px dashed #1b4332;
+}
+
+.double {
+  border: 5px double #40916c;
+}
+
+.groove {
+  border: 8px groove #74c69d;
+}
+
+/* Rounded corners */
+.rounded {
+  border-radius: 15px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+/* Padding variations */
+.pad-small {
+  padding: 10px;
+}
+
+.pad-medium {
+  padding: 20px;
+}
+
+.pad-large {
+  padding: 30px;
+}
+
+/* Hover effect */
+.box:hover {
+  border-color: #ff6b6b;
+  transform: translateY(-5px);
+}

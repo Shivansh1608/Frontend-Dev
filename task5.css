@@ -1,0 +1,78 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f6f8fa;
+  padding: 40px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1b4332;
+}
+
+/* ATTRIBUTE SELECTORS */
+input[type="text"] {
+  border: 2px solid #2d6a4f;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+a[href^="https"] {
+  color: #1b4332;
+  font-weight: bold;
+}
+
+a[href^="http"]:not([href^="https"]) {
+  color: crimson;
+}
+
+/* PSEUDO-CLASSES */
+input:focus {
+  border-color: #40916c;
+  background-color: #d8f3dc;
+}
+
+li:nth-child(odd) {
+  background: #d8f3dc;
+}
+
+li:hover {
+  background: #95d5b2;
+  cursor: pointer;
+}
+
+/* PSEUDO-ELEMENTS */
+li::before {
+  content: "👉 ";
+  color: #2d6a4f;
+}
+
+li::after {
+  content: " ✔";
+  color: #1b4332;
+}
+
+/* COMBINATORS */
+/* Child selector (>) */
+.parent > p {
+  color: #2d6a4f;
+}
+
+/* Adjacent sibling (+) */
+.sibling + p {
+  color: #d00000;
+}
+
+/* General sibling (~) */
+.sibling ~ p {
+  font-style: italic;
+}
+
+/* Descendant selector (space) */
+.parent p {
+  margin-left: 10px;
+}

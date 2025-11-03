@@ -1,0 +1,48 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  padding: 40px;
+  line-height: 1.7;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #1b4332;
+}
+
+article {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  text-align: justify;
+}
+
+mark {
+  background-color: #d8f3dc;
+  color: #1b4332;
+  padding: 2px 4px;
+}
+
+strong {
+  color: #40916c;
+  font-weight: 700;
+}
+
+em {
+  color: #c9184a;
+}
+
+p::first-letter {
+  font-size: 2em;
+  color: #2d6a4f;
+  font-weight: bold;
+}
+
+p::first-line {
+  font-weight: 500;
+  color: #1b4332;
+}
