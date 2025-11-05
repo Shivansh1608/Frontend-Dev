@@ -1,0 +1,58 @@
+/* Element Selector */
+p {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Class Selector */
+.highlight {
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* ID Selector */
+#unique {
+  color: white;
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Attribute Selector */
+a[title] {
+  color: #28a745;
+  text-decoration: none;
+  border-bottom: 2px solid #28a745;
+}
+
+a[title]:hover {
+  color: #155724;
+}
+
+/* Combinators */
+.parent > p {
+  color: #e74c3c;
+}
+
+.parent + .next {
+  color: #8e44ad;
+}
+
+.parent ~ .another {
+  color: #16a085;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 30px;
+}
+
+header, footer {
+  text-align: center;
+  padding: 10px;
+  background: #efefef;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
