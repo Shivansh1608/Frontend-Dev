@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<body>
+  <h1>Resume Builder</h1>
+
+  <form id="resumeForm">
+    <label>Name</label>
+    <input name="name"><br>
+
+    <label>Email</label>
+    <input name="email">
+    <div id="emailErr"></div>
+
+    <label>Skills (comma separated)</label>
+    <input name="skills"><br>
+
+    <label>GitHub URL</label>
+    <input name="github">
+    <div id="gitErr"></div>
+
+    <label>LinkedIn URL</label>
+    <input name="linkedin">
+    <div id="linkErr"></div>
+
+    <button type="submit">Create Resume Object</button>
+  </form>
+
+  <h2>Generated Resume</h2>
+  <pre id="resumeOut"></pre>
+
+  <script src="q10.js" defer></script>
+</body>
+</html>

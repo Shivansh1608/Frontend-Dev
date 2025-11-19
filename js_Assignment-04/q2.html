@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Q2 - Student Form</title>
+
+  <style>
+    .error { border: 2px solid red; }
+    .valid { border: 2px solid green; }
+    .msg { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Student Registration Form</h1>
+
+  <form id="regForm">
+    <label>Name</label>
+    <input id="name" type="text" />
+    <div id="nameErr" class="msg"></div>
+
+    <label>Email</label>
+    <input id="email" type="text" />
+    <div id="emailErr" class="msg"></div>
+
+    <label>Phone</label>
+    <input id="phone" type="text" />
+    <div id="phoneErr" class="msg"></div>
+
+    <label>Password</label>
+    <input id="password" type="password" />
+    <div id="passErr" class="msg"></div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="q2.js" defer></script>
+</body>
+</html>
