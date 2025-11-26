@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "id": "d2cc",
+      "name": "Shivansh Gupta",
+      "email": "shivanshguptagla0508@gmail.com",
+      "section": "A",
+      "enrollmentDate": "2005-02-25"
+    },
+    {
+      "id": "5956",
+      "name": "shree",
+      "email": "shivanshguptagla0508@gmail.com",
+      "section": "f",
+      "enrollmentDate": "4444-03-12"
+    },
+    {
+      "id": "b10b",
+      "name": "bhjijh",
+      "email": "bhknj",
+      "section": "j",
+      "enrollmentDate": "0008-07-09"
+    }
+  ],
+  "sections": [
+    {}
+  ]
+}

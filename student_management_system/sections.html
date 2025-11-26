@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Section Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>Student Result Management System</h1>
+    <p>Manage sections</p>
+</header>
+
+<!-- Tabs -->
+<nav class="tabs">
+    <button class="tab" onclick="location.href='index.html'">Students</button>
+    <button class="tab active">Sections</button>
+    <button class="tab" onclick="location.href='results.html'">Results</button>
+</nav>
+
+<!-- Sections Page -->
+<section class="page active">
+    <div class="section-header">
+        <h2>Section Management</h2>
+        <button class="btn primary" onclick="openSectionModal()">+ Add New Section</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Section Name</th>
+                <th>Class</th>
+                <th>Room</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="sectionsBody">
+            <tr><td colspan="4" class="empty">Loading...</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Section Modal -->
+<div id="sectionModal" class="modal">
+    <div class="modal-box">
+        <h3>Add New Section</h3>
+
+        <label>Section Name *</label>
+        <input id="sectionName" type="text">
+
+        <label>Class</label>
+        <input id="sectionClass" type="text">
+
+        <label>Room</label>
+        <input id="sectionRoom" type="text">
+
+        <div class="modal-actions">
+            <button class="btn secondary" onclick="closeSectionModal()">Cancel</button>
+            <button class="btn primary" onclick="createSection()">Create</button>
+        </div>
+    </div>
+</div>
+
+<script src="sections.js"></script>
+</body>
+</html>

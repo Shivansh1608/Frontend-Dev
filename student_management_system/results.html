@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Result Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <h1>Student Result Management System</h1>
+        <p>Manage academic results</p>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+        <button class="tab" onclick="location.href='index.html'">Students</button>
+        <button class="tab" onclick="location.href='sections.html'">Sections</button>
+        <button class="tab active">Results</button>
+    </nav>
+
+    <!-- Results Page -->
+    <section class="page active">
+        <div class="section-header">
+            <h2>Result Management</h2>
+            <button class="btn primary" onclick="openResultModal()">+ Add New Result</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="resultsBody">
+                <tr>
+                    <td colspan="5" class="empty">Loading...</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Result Modal -->
+    <div id="resultModal" class="modal">
+        <div class="modal-box">
+            <h3>Add New Result</h3>
+
+            <label>Student ID *</label>
+            <input id="resultStudentId" type="text" placeholder="Enter Student ID">
+
+            <label>Subject *</label>
+            <input id="resultSubject" type="text">
+
+            <label>Marks *</label>
+            <input id="resultMarks" type="number">
+
+            <label>Grade</label>
+            <input id="resultGrade" type="text">
+
+            <div class="modal-actions">
+                <button class="btn secondary" onclick="closeResultModal()">Cancel</button>
+                <button class="btn primary" onclick="createResult()">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="results.js"></script>
+</body>
+
+</html>

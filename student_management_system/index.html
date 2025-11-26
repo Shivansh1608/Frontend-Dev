@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <h1>Student Result Management System</h1>
+        <p>Manage students, sections, and academic results</p>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+        <button id="tabStudents" class="tab active">Students</button>
+        <button id="tabSections" class="tab" onclick="location.href='sections.html'">Sections</button>
+        <button id="tabResults" class="tab" onclick="location.href='results.html'">Results</button>
+    </nav>
+
+    <!-- PAGE: Students -->
+    <section id="pageStudents" class="page active">
+
+        <div class="section-header">
+            <h2>Student Management</h2>
+            <button class="btn primary" onclick="openStudentModal()">+ Add New Student</button>
+        </div>
+
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Section</th>
+                    <th>Enrollment Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentsBody">
+                <tr>
+                    <td colspan="5" class="empty">Loading...</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <!-- Student Modal -->
+    <div id="studentModal" class="modal">
+        <div class="modal-box">
+            <h3>Add New Student</h3>
+
+            <label>Name *</label>
+            <input id="studentName" type="text" required>
+
+            <label>Email *</label>
+            <input id="studentEmail" type="email" required>
+
+            <label>Section</label>
+            <input id="studentSection" type="text">
+
+            <label>Enrollment Date</label>
+            <input id="studentDate" type="date">
+
+            <div class="modal-actions">
+                <button class="btn secondary" onclick="closeStudentModal()">Cancel</button>
+                <button class="btn primary" onclick="createStudent()">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
