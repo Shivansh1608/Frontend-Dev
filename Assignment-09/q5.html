@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q5 - Team Directory</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q5.js"></script>
+
+  <style>
+    .dept { border: 1px solid #aaa; padding: 10px; margin: 10px 0; }
+    .member { padding: 5px; margin: 5px 0; cursor: pointer; }
+    .highlight { background: #e8f5e9; }
+    .contact { background: #e3f2fd; padding: 5px; margin: 5px 0; }
+  </style>
+</head>
+
+<body>
+
+  <div class="dept">
+    <h3 class="dept-name">Design</h3>
+    <div class="manager member">Aisha (Manager)</div>
+    <div class="report member">Ravi</div>
+    <div class="report member">Maya</div>
+    <div class="report member">Suresh</div>
+    <button class="collapse">Collapse</button>
+  </div>
+
+  <div class="dept">
+    <h3 class="dept-name">Engineering</h3>
+    <div class="manager member">Dev (Manager)</div>
+    <div class="report member">Kiran</div>
+    <div class="report member">Nisha</div>
+    <div class="report member">Arjun</div>
+    <button class="collapse">Collapse</button>
+  </div>
+
+  <button id="randomEmployee">Random Employee</button>
+
+</body>
+</html>

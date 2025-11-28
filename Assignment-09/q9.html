@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q9 - Multi-jQuery Widgets</title>
+
+  <!-- jQuery version 1 -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    var jq1 = $.noConflict(true);
+  </script>
+
+  <!-- jQuery version 3 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    var jq3 = $.noConflict(true);
+  </script>
+
+  <script src="q9.js"></script>
+
+  <style>
+    .widget { padding: 10px; border: 1px solid #ccc; margin: 10px 0; }
+    .active { background: #ffe0b2; }
+  </style>
+</head>
+
+<body>
+
+  <div class="widget" id="carousel">Carousel Widget</div>
+  <div class="widget" id="modal">Modal Popup Widget</div>
+  <div class="widget" id="tooltip">Tooltip Widget</div>
+
+</body>
+</html>

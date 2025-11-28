@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q2 - Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q2.js"></script>
+
+  <style>
+    .product { border: 1px solid #ccc; padding: 10px; margin: 10px; }
+    .highlight { background: #fffae6; }
+    .fav { cursor: pointer; color: red; }
+    .details { display: none; }
+    [discount="true"] { border: 2px dashed orange; }
+  </style>
+</head>
+
+<body>
+  <div class="product" data-stock="5" discount="true">
+    <h3>Headphones</h3>
+    <span class="fav">♡</span>
+    <p class="details">Extra Bass | 1 Year Warranty</p>
+  </div>
+
+  <div class="product" data-stock="0" discount="false">
+    <h3>Smart Mug</h3>
+    <span class="fav">♡</span>
+    <p class="details">Keeps Warm</p>
+  </div>
+
+  <div class="product" data-stock="3" discount="true">
+    <h3>Fitness Band</h3>
+    <span class="fav">♡</span>
+    <p class="details">Heart Rate | Waterproof</p>
+  </div>
+
+</body>
+</html>
